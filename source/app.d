@@ -22,15 +22,16 @@ void main(string[] args)
         switch (region)
         {
             case "EU":
-                bKey.setValue("REGION", "US");
+                region = "US";
                 break;
             case "US":
-                bKey.setValue("REGION", "EU");
+                region = "EU";
                 break;
             default:
-                bKey.setValue("REGION", "US");
                 region = "US";
         }
+
+        bKey.setValue("REGION", region);
     }
 
     writeln("Switched region to: ", region.color("green"));
