@@ -1,0 +1,13 @@
+{
+	"name": "overwatch-region-switcher",
+	"description": "Switch inbetween overwatch server regions without having to use battle.net client.",
+	"dependencies": {
+	"colorize": "~>1.0.5"
+	},
+	"authors": [
+		"Smug"
+	],
+	"copyright": "Copyright © 2019, Smug",
+	"license": "Do What The Fuck You Want To Public License",
+	"targetName": "build\\overwatch-region-switcher"
+}
