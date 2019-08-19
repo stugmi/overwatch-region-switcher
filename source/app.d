@@ -12,9 +12,8 @@ void main(string[] args)
     auto region = bKey.getValue("REGION").value_SZ;
     auto regions = ["EU","US","KR","CN"];
 
-    if (args.length > 1 && regions.canFind(args[1])) {
-        region = args[1];
-        bKey.setValue("REGION", region);
+    if (args.length > 1 && regions.canFind(toUpper(args[1]))) {
+        region = toUpper(args[1]);
     } else {
         writefln("%s:\n\tPlease pass one of these %s\n\tas an argument to not toggle inbetween EU/NA\n", strip(args[0], ".\\"), regions);
 
